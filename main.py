@@ -21,7 +21,7 @@ print(month)
 
 
 
-Birthday_File = "./Birthday_Tracker.csv"
+Birthday_File = "Birthday_Tracker.csv"
 
 
 def send_birthday_email(name, email):
