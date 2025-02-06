@@ -1,0 +1,31 @@
+-- github actions are to be used to make the scheduler automated.
+🔹 What is GitHub Actions?
+GitHub Actions is a CI/CD (Continuous Integration and Continuous Deployment) tool built into GitHub. It allows you to automate tasks 
+such as testing, building, and deploying code whenever an event occurs (e.g., pushing code, creating a pull request, or scheduling jobs).
+
+
+# Contents of the folder
+github repo
+-codes main.py
+we need a folder .github/workflows
+inside workflows we add a file named scheduler.yaml which contains all the requirements of the program
+
+
+To run the code:
+-- pip install requirements -r
+-- python main.py
+
+
+# inside the yaml file
+
+cron is used==> cron job
+cron scheduling system
+https://contabo.com/blog/master-the-cron-scheduling-syntax/
+
+* is used for empty values
+
+----------------
+pip freeze
+pip freeze > requirements.txt
+
+the lists of the freeze are added to a requirements file
