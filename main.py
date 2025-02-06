@@ -16,13 +16,13 @@ def send_email(name, email):
     message["Subject"] = "BIRTHDAY WISHES!"
     
     body = f"""
-Dearest {name},
+    Dearest {name},
 
-Wishing you a very very Happy Birthday!
+    Wishing you a very very Happy Birthday!
 
 
-P.S This is an automated email sent using Python.
-    """
+    P.S This is an automated email sent using Python.
+        """
     
     message.attach(MIMEText(body, "plain"))
 
@@ -48,6 +48,7 @@ except FileNotFoundError:
 # Get today's date
 today = datetime.datetime.now()
 today_month = today.month
+print(today_month)
 
 # Iterate through rows in DateFrame
 for index, row in df.iterrows():
