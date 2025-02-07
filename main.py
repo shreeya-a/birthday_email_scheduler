@@ -48,15 +48,17 @@ except FileNotFoundError:
 # Get today's date
 today = datetime.datetime.now()
 today_month = today.month
-print(today_month)
+today_day = today.day
+# print(today_day)
 
 # Iterate through rows in DateFrame
 for index, row in df.iterrows():
     birthday = pd.to_datetime(row['BirthDay'])
     birthday_month = birthday.month
+    birthday_day = birthday.day
     
     
-    if birthday_month == today_month:
+    if birthday_month == today_month and birthday_day == today_day:
         name = row['Name']
         email = row['Email']
         print(f"Today is {name}'s birthday!")
